@@ -10,7 +10,7 @@ export default class VehicleNewRoute extends Route {
             const newVehicle = this.store.createRecord('vehicle', this.currentModel)
 
             newVehicle.save().then((vehicle) => {
-                this.transitionTo('vehicle.edit', vehicle)
+                this.transitionTo('vehicles.edit', vehicle)
             });
         },
         cancel() {

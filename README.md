@@ -2,43 +2,34 @@
 
 Este teste visa avaliar os conhecimentos e habilidades na nossa stack de tecnologias necessários para aplicação a oportunidade de desenvolvedor full stack aqui na [Sofit](https://sofit4.com.br).
 
-## Objetivo do teste
+# Instruções
+- Clone o repositório
+- Acesse o diretório do projeto
+- Inicie o docker e execute `docker-compose up`
 
-O teste consiste em desenvolver uma pequena aplicação para um CRUD de veículos que deve conter pelo menos os seguintes itens:
-- Listar veículos,
-- Inserir um veículo,
-- Visualizar um veículo,
-- Editar um veículo, 
-- Excluir um veículo.
+# Backend
+- Acesso: `localhos:3000`
+- Endpoints:
+    - POST: `/vehicles`
+    - GET: `/vehicles?page=1`
+    - GET: `/vehicles/:id`
+    - UPDATE: `/vehicles/:id`
+    - DELETE: `/vehicles/:id`
 
-Fique a vontade para construir a interface da forma que achar melhor, este será um dos pontos avaliados. 
 
-Sugestão mínima de campos para cadastro: Placa, Marca, Modelo, Versão e Ano. Mas fique a vontade para adicionar o que achar pertinente.
+# Frontend
+- Acesso: `localhos:4200`
 
-As APIs também podem ser construídas utilizando o Design Pattern de seu interesse.
 
-## Requisitos
+    Index
 
-Já deixamos o projeto iniciado com uma stack definida, basta fazer o fork do repositório e dar continuidade:
-Front: [EmberJS](https://emberjs.com/)\
-Back: [NodeJS + Express](https://expressjs.com/pt-br/)\
-Banco: [MongoDB](https://www.mongodb.com/) ou [PostgreSQL](https://www.postgresql.org/). Utilize uma imagem do Docker de acordo com o banco escolhido:
-- [Imagem Postgres](https://hub.docker.com/_/postgres)
-- [Imagem Mongo](https://hub.docker.com/_/mongo)
+![Index](./print_index.png "Index")
 
-Para listar marcas e modelos e carregar as opções em tela, você deve utilizar uma API pública que retorne as informações, encontramos [Esta aqui](https://deividfortuna.github.io/fipe/), mas se quiser utilizar outra, a vontade. O importante é avaliarmos como você realiza as requisições a APIs externas.
+    Novo Registro
 
-## Conclusão do desafio
+![Novo Registro](./print_new.png "Novo Registro")
 
-Após realizar o desafio, enviar ao Github e nos enviar o link no e-mail dev.jobs@sofit4.com.br.
 
-## O que vamos avaliar?
+    Edição de Registro
 
-- Estruturação e organização do código,
-- Funcionalidade da aplicação,
-- Interface final da aplicação,
-- Design Patterns,
-- Itens adicionais não solicitados.
-
-## Bonus
-- Criação de testes automatizados (Backend).
+![Edição de Registro](./print_edit.png "Edição de Registro")
