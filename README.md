@@ -8,7 +8,7 @@ Este teste visa avaliar os conhecimentos e habilidades na nossa stack de tecnolo
 - Inicie o docker e execute `docker-compose up`
 
 # Backend
-- Acesso: `localhos:3000`
+- Acesso: `localhost:3000`
 - Endpoints:
     - POST: `/vehicles`
     - GET: `/vehicles?page=1`
@@ -18,7 +18,7 @@ Este teste visa avaliar os conhecimentos e habilidades na nossa stack de tecnolo
 
 
 # Frontend
-- Acesso: `localhos:4200`
+- Acesso: `localhost:4200`
 
 
     Index
