@@ -1,10 +1,10 @@
 {{page-title "Vehicles"}}
 <div class="container d-flex py-4 justify-content-between align-items-center">
   <h3>Vehicles</h3>
-  <a href="" class="btn btn-primary shadow">
+  {{#link-to 'vehicles.new' tagName='button' class='btn btn-primary shadow' }}
     <i class="fa-solid fa-car"></i>
     New Vehicle
-  </a>
+  {{/link-to}}
 </div>
 
 <div class="container p-4">
@@ -45,9 +45,7 @@
     {{#each model.meta.pagination.pages as |value|}}
       {{#if value}}
         <li class="page-item">
-          {{#link-to 'vehicles.index' (query-params page=value) class='page-link' }}
-            {{ value }}
-          {{/link-to}}
+          <a href="?page={{ value }}" class="page-link">{{ value }}</a>
         </li>
       {{/if}}
     {{/each}}
