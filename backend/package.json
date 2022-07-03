@@ -4,7 +4,9 @@
   "description": "Este teste visa avaliar os conhecimentos e habilidades na nossa stack de tecnologias necessários para aplicação a oportunidade de desenvolvedor full stack aqui na [Sofit](https://sofit4.com.br).",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "up": "npm install && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,8 @@
   "homepage": "https://github.com/SofitSoftware/fullstackchallenge#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
   }
 }

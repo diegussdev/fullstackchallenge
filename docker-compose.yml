@@ -20,7 +20,7 @@ services:
     container_name: backend
     environment:
       APP_BACKEND_PORT: 3000
-    command: bash -c "npm install && npm start"
+    command: bash -c "npm run up"
     volumes:
       - ./backend:/srv/app/backend
     ports:
