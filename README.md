@@ -13,7 +13,7 @@ Este teste visa avaliar os conhecimentos e habilidades na nossa stack de tecnolo
     - POST: `/vehicles`
     - GET: `/vehicles?page=1`
     - GET: `/vehicles/:id`
-    - UPDATE: `/vehicles/:id`
+    - PUT: `/vehicles/:id`
     - DELETE: `/vehicles/:id`
 
 
