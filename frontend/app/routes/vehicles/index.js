@@ -11,4 +11,11 @@ export default class VehiclesRoute extends Route {
     model(params) {
         return this.store.query('vehicle', { page: params.page ? params.page : 1 });
     }
+
+    actions = {
+        delete(vehicle) {
+            vehicle.deleteRecord();
+            vehicle.save();
+        }
+    }
 }
