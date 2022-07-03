@@ -1,0 +1,13 @@
+{
+  "username": "root",
+  "password": "password",
+  "database": "full_stack_challenge",
+  "host": "db",
+  "dialect": "postgres",
+  "operationAliases": false,
+  "define": {
+    "timestamps": true,
+    "underscored": true,
+    "underscoredAll": true
+  }
+}
